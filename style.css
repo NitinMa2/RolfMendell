@@ -1,0 +1,126 @@
+* {
+	transition: all 0.5s;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+}
+
+h1 {
+	color: #59047B;
+	margin: 0;
+	font-size: 9vw;
+	font-weight: 900;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #159db2; 
+}
+::-webkit-scrollbar-thumb {
+  background: #0f7182; 
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px 100px;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 10;
+}
+header .brand {
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	font-size: 0.8em;
+	float: left;
+	font-weight: 300;
+}
+nav {
+	float: right;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+nav ul li {
+	list-style: none;
+	font-size: 0.5em;
+	font-weight: 900;
+}
+nav ul li a {
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	color: #91dde8;
+	text-decoration: none;
+	display: block;
+}
+nav ul li a:hover {
+	color: #73CEDC;
+}
+.menu-toggle {
+	color: #fff;
+	float: right;
+	line-height: 56px;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+}
+@media (max-width: 991px) {
+	header {
+		padding: 10px 20px;
+	}
+	.menu-toggle {
+		display: block;
+	}
+	nav {
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 50px);
+		background: #560D7F;
+		top: -100vh;
+		left: 0;
+		transition: 0.5s;
+		z-index: 10;
+	}
+	nav.active {
+		top: 70px;
+	}
+	nav ul {
+		display: block;
+		text-align: center;
+	}
+	nav ul li {
+		padding: 4vh;
+	}
+}
+.nav-shade {
+	background-color: #59047B;
+	transition: all 0.5s;
+}
+.transparent {
+	transition: all 0.5s;
+}
+
+#header {
+	background-color: #2EACC0;
+	min-height: 110vh;
+	padding-left: 7vw;
+}
