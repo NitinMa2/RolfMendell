@@ -12,8 +12,10 @@ body {
 h1 {
 	color: #59047B;
 	margin: 0;
+	padding: 0;
 	font-size: 9vw;
 	font-weight: 900;
+	cursor: pointer;
 }
 
 .vertical-center {
@@ -22,6 +24,12 @@ h1 {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.fixed-top {
+	margin: 0;
+  	position: absolute;
+  	top: 20%;
 }
 
 ::-webkit-scrollbar {
@@ -34,6 +42,7 @@ h1 {
   background: #0f7182; 
 }
 
+/*Nav*/
 header {
 	position: fixed;
 	top: 0;
@@ -67,7 +76,7 @@ nav ul li {
 nav ul li a {
 	height: 50px;
 	line-height: 50px;
-	padding: 0 20px;
+	padding: 0 10px;
 	color: #91dde8;
 	text-decoration: none;
 	display: block;
@@ -118,9 +127,17 @@ nav ul li a:hover {
 .transparent {
 	transition: all 0.5s;
 }
+/*Nav*/
 
+/*Header*/
 #header {
 	background-color: #2EACC0;
 	min-height: 110vh;
 	padding-left: 7vw;
 }
+#header p {
+	color: #91dde8;
+	font-size: 0.45em;
+	font-style: italic;
+}
+/*Header*/
